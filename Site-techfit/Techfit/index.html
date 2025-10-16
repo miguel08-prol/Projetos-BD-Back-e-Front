@@ -4,97 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHFIT: A Academia que Inspira | Planos e Atividades</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
         <div class="cabecalho__logo-busca">
             <a href="/" title="Página Inicial TechFit">
-                <img src="logo-techfit-dark.png" alt="Logo da Academia TechFit" class="logo" id="logo-techfit" height="80" width="80">
+                <div class="logo">TF</div>
             </a>
-            <div class="busca" role="search">
-                <input type="text" placeholder="Buscar Aulas, Planos ou Produtos" class="busca__input" aria-label="Campo de busca">
-                <button class="busca__botao" aria-label="Realizar busca">🔍</button>
+            <div class="busca">
+                <input type="text" placeholder="Buscar Aulas, Planos ou Produtos" class="busca__input">
+                <button class="busca__botao">🔍</button>
             </div>
         </div>
         
-        <nav class="menu" aria-label="Menu Principal de Navegação">
-            <a href="#" class="menu__item" title="Ir para a página inicial">Home</a>
-            <a href="#" class="menu__item" title="Ver todos os planos disponíveis">Planos</a>
-            <a href="#" class="menu__item" title="Conferir a grade e horários de aulas">Aulas</a>
-            <a href="#" class="menu__item" title="Explorar produtos de fitness e suplementos">Produtos</a>
-            <a href="#" class="menu__item" title="Acessar página de inscrições">Inscrições</a>
+        <nav class="menu">
+            <a href="#" class="menu__item">Home</a>
+            <a href="#" class="menu__item">Planos</a>
+            <a href="#" class="menu__item">Aulas</a>
+            <a href="#" class="menu__item">Produtos</a>
+            <a href="#" class="menu__item">Inscrições</a>
         </nav>
         
         <div class="cabecalho__utilitarios">
-            <button class="utilitario__botao" aria-label="Alternar para modo escuro ou claro">🌙 Escuro/Claro</button>
-            <span class="utilitario__separador" aria-hidden="true">|</span>
-            <span class="utilitario__idioma" title="Idioma atual: Português">PT</span>
-            <a href="#" class="utilitario__link" id="btn-login" title="Fazer login na sua conta">Login</a>
-            <a href="#" class="utilitario__link" id="btn-cadastro" title="Criar uma nova conta">Cadastro</a>
-            <button class="utilitario__menu-hamburguer" aria-label="Abrir menu mobile">☰</button>
+            <button class="utilitario__botao" id="btn-modo">🌙 Modo</button>
+            <span class="utilitario__idioma">PT</span>
+            <a href="#" class="utilitario__link" id="btn-login">Login</a>
+            <a href="#" class="utilitario__link" id="btn-cadastro">Cadastro</a>
         </div>
     </header>
 
     <main class="conteudo-principal">
+        <section class="hero">
+            <div class="hero__conteudo">
+                <h1 class="hero__titulo">Transforme Seu Corpo, Eleve Sua Mente</h1>
+                <p class="hero__subtitulo">A academia mais moderna de São Paulo. Equipamentos de ponta, instrutores certificados e resultados garantidos.</p>
+                <a href="#" class="hero__cta">Comece Agora</a>
+            </div>
+        </section>
+
         <section class="secao-atividades">
             <h2 class="secao__titulo">Atividades em Destaque</h2>
             <div class="secao__lista">
-                
-                <div class="secao__item atividade__item">
-                    <div class="atividade__conteudo">
-                        <img src="ex-funcional.png" alt="Treinamento funcional"> 
-                    </div>
-                    <button class="atividade__navegacao" aria-label="Ver próxima atividade"></button>
+                <div class="atividade__item">
+                    <div class="atividade__conteudo">Treinamento Funcional</div>
+                    <button class="atividade__navegacao"></button>
                 </div>
                 
-                <div class="secao__item atividade__item">
+                <div class="atividade__item">
                     <div class="atividade__conteudo">Yoga e Alongamento</div>
-                    <button class="atividade__navegacao" aria-label="Ver próxima atividade"></button>
+                    <button class="atividade__navegacao"></button>
                 </div>
                 
-                <div class="secao__item atividade__item">
+                <div class="atividade__item">
                     <div class="atividade__conteudo">Natação/Hidroginástica</div>
-                    <button class="atividade__navegacao" aria-label="Ver próxima atividade"></button>
+                    <button class="atividade__navegacao"></button>
                 </div>
                 
-                <div class="secao__item atividade__item">
+                <div class="atividade__item">
                     <div class="atividade__conteudo">Boxe Fitness</div>
-                    <button class="atividade__navegacao" aria-label="Ver próxima atividade"></button>
+                    <button class="atividade__navegacao"></button>
                 </div>
-                
             </div>
-        </section> 	
-        
+        </section>
+
         <section class="secao produtos">
             <h2 class="secao__titulo">Produtos para seu Treino</h2>
             <div class="secao__lista">
-                <div class="secao__item produto__item">
-                    <div class="produto__imagem">Whey Protein</div>
+                <div class="produto__item">
+                    <div class="produto__imagem">💪 Whey Protein</div>
                     <p class="produto__info">Suplemento, Chocolate, R$ 129,90</p>
                 </div>
-                <div class="secao__item produto__item">
-                    <div class="produto__imagem">Garrafa Térmica</div>
+                <div class="produto__item">
+                    <div class="produto__imagem">🥤 Garrafa Térmica</div>
                     <p class="produto__info">Acessório, 1 Litro, R$ 45,00</p>
                 </div>
-                <div class="secao__item produto__item">
-                    <div class="produto__imagem">Kit Elásticos</div>
+                <div class="produto__item">
+                    <div class="produto__imagem">🏋️ Kit Elásticos</div>
                     <p class="produto__info">Acessório, 5 Níveis, R$ 89,90</p>
                 </div>
-                <div class="secao__item produto__item">
-                    <div class="produto__imagem">Luva de Treino</div>
+                <div class="produto__item">
+                    <div class="produto__imagem">🧤 Luva de Treino</div>
                     <p class="produto__info">Vestuário, Couro, R$ 55,00</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <div id="modal-auth" class="modal" aria-modal="true" role="dialog" aria-labelledby="modal-titulo">
+    <div id="modal-auth" class="modal">
         <div class="modal__conteudo">
-            <button class="modal__fechar" aria-label="Fechar Janela Modal">&times;</button>
+            <button class="modal__fechar">&times;</button>
             
-            <h3 id="modal-titulo" class="modal__titulo">Acesse sua Conta</h3>
+            <h3 class="modal__titulo">Acesse sua Conta</h3>
             
             <form id="form-login" class="modal__form">
                 <div class="form__grupo">
@@ -135,6 +137,6 @@
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
